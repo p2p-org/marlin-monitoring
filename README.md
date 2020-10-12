@@ -28,7 +28,7 @@ For additonal information please read corresponding repositories READMEs to buil
 
 __docker-compose.yml__
 
-The configuration for docker-compose to run Grafana + loki in Docker containers
+The configuration for docker-compose to run Grafana + Loki in Docker containers
 
 ```shell
 docker-compose up
