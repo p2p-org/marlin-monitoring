@@ -66,6 +66,9 @@ systemctl enable haproxy
 systemctl start haproxy
 systemctl status haproxy
 ```
+## Contribution policy
+
+Feel free to open issues or pull requests, but we won't accept PRs that make monitoring setup or maintenance significantly more difficult or expensive.
 
 ## License
 
