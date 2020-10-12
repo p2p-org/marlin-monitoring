@@ -69,4 +69,4 @@ systemctl status haproxy
 
 ## Lincense
 
-Apeche License 2.0
+Apache License 2.0
