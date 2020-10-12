@@ -67,6 +67,6 @@ systemctl start haproxy
 systemctl status haproxy
 ```
 
-## Lincense
+## License
 
 Apache License 2.0
