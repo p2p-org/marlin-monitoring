@@ -6,9 +6,7 @@ networks:
       name: monitoring
 
 volumes:
-  prometheus_data:
   grafana_data:
-  alertmanager_data:
   loki_data:
 
 services:
