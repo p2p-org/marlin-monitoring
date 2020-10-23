@@ -21,10 +21,19 @@ For additonal information please read corresponding repositories READMEs to buil
 
 * Build Promtail from official [Loki repository](https://github.com/grafana/loki)
 * Put Grafana, Loki, and Promtail config files to their respective locations
-* Run Promtail from promtail.service systemd unit using 'promtail' user as process owner
+* Run Promtail from promtail.service systemd unit using root user as process owner
 * Run Marlin Beacon and Relay servers on their respective VMs or locally using systemd services
 
+## Recommended run flow
+
+* Clone [__marlin-monitoring__ repository](https://github.com/p2p-org/devops-marlin) by ```git clone --recursive``` command into local __/home__ directory
+* Run monitoring stack using scripts ```marlin-*.sh```
+
 ## Files and directories
+
+__marlin-grafana-dashboard.json__
+
+Should be imported into Grafana to get metrics from Marlin Beacon & Relay(s).
 
 __docker-compose.yml__
 
@@ -33,6 +42,13 @@ The configuration for docker-compose to run Grafana + Loki in Docker containers
 ```shell
 docker-compose up
 ```
+__bin/__
+
+Contains prebuilt binaries.
+
+__deploy/__
+
+Contains Ansible playbooks for rolling Beacon Server, Relay Server instances, and its monitoring stack.
 
 __promtail/__
 

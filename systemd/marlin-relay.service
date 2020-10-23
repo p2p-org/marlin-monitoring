@@ -4,8 +4,8 @@ Description=Marlin Protocol Relay (requires Ehtereum Full Node to run)
 [Service]
 User=marlin
 Type=simple
-WorkingDirectory=/home/OpenWeaver-bin
-ExecStart=/home/OpenWeaver-bin/relay/relayexec "127.0.0.1:8002"
+WorkingDirectory=/home/marlin
+ExecStart=/home/marlin-monitoring/bin/relay/relayexec "127.0.0.1:8002"
 Restart=always
 RestartSec=5
 

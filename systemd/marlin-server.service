@@ -4,8 +4,8 @@ Description=Marlin Protocol Beacon Server
 [Service]
 User=marlin
 Type=simple
-WorkingDirectory=/home/OpenWeaver-bin
-ExecStart=/home/OpenWeaver-bin/beacon/beacon
+WorkingDirectory=/home/marlin
+ExecStart=/home/marlin-monitoring/bin/beacon/beacon
 Restart=always
 RestartSec=5
 

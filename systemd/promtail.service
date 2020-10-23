@@ -2,10 +2,10 @@
 Description=Promtail is Log Shipping Agent to a Loki instance
 
 [Service]
-User=promtail
+User=root
 Type=simple
-WorkingDirectory=/home/loki/promtail
-ExecStart=/home/loki/promtail -config.file=/etc/promtail/promtail.yaml
+WorkingDirectory=/home/marlin-monitoring/bin
+ExecStart=/home/marlin-monitoring/bin/promtail -config.file=/etc/promtail/promtail.yaml
 Restart=always
 RestartSec=5
 
