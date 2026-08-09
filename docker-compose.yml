@@ -23,7 +23,7 @@ services:
       - "127.0.0.1:3000:3000"
 
   loki:
-    image: grafana/loki:1.6.1
+    image: grafana/loki:3.7.6
     restart: always
     command: -config.file=/etc/loki/local-config.yaml
     ports:
